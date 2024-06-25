@@ -1,0 +1,117 @@
+2024-06-07 16:19:59.166 INFO  com.gec.wiki.WikiApplication                      :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_412 on LAPTOP-GGL9I8HI with PID 14504 (D:\姚智洪\作业\实训作业\wiki\target\classes started by yzh in D:\姚智洪\作业\实训作业\wiki)
+2024-06-07 16:19:59.169 INFO  com.gec.wiki.WikiApplication                      :645  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-06-07 16:19:59.202 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-07 16:19:59.202 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-07 16:20:00.052 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2024-06-07 16:20:00.058 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-07 16:20:00.058 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-07 16:20:00.058 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-06-07 16:20:00.110 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-07 16:20:00.111 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 908 ms
+2024-06-07 16:20:00.907 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-07 16:20:00.925 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-06-07 16:20:00.937 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-07 16:20:00.944 INFO  com.gec.wiki.WikiApplication                      :61   [32m                  [0;39m Started WikiApplication in 2.052 seconds (JVM running for 5.007)
+2024-06-07 16:20:00.946 INFO  com.gec.wiki.WikiApplication                      :21   [32m                  [0;39m 启动成功！！
+2024-06-07 16:20:00.947 INFO  com.gec.wiki.WikiApplication                      :22   [32m                  [0;39m 地址：	http://127.0.0.1:8080
+2024-06-07 16:23:59.784 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-07 16:23:59.784 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-07 16:23:59.785 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-07 16:23:59.918 INFO  com.alibaba.druid.pool.DruidDataSource            :990  [32m                  [0;39m {dataSource-1} inited
+2024-06-07 16:31:46.083 WARN  com.alibaba.druid.pool.DruidAbstractDataSource    :1494 [32m                  [0;39m discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, version : 1.2.5, lastPacketReceivedIdleMillis : 466038
+2024-06-07 16:41:13.637 WARN  com.alibaba.druid.pool.DruidAbstractDataSource    :1494 [32m                  [0;39m discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, version : 1.2.5, lastPacketReceivedIdleMillis : 567547
+2024-06-07 20:10:00.350 WARN  com.alibaba.druid.pool.DruidAbstractDataSource    :1494 [32m                  [0;39m discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, version : 1.2.5, lastPacketReceivedIdleMillis : 107237
+2024-06-07 20:13:34.441 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:210  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-06-07 20:13:34.533 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2024-06-07 20:13:34.533 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2024-06-07 20:13:34.534 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-06-07 20:13:34.538 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [ROOT] appears to have started a thread named [Druid-ConnectionPool-Create-568618578] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2776)
+2024-06-07 20:13:34.539 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [ROOT] appears to have started a thread named [Druid-ConnectionPool-Destroy-568618578] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.alibaba.druid.pool.DruidDataSource$DestroyConnectionThread.run(DruidDataSource.java:2876)
+2024-06-07 20:13:34.540 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2024-06-07 20:13:34.541 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8080"]
+2024-06-07 20:13:34.545 INFO  com.alibaba.druid.pool.DruidDataSource            :2043 [32m                  [0;39m {dataSource-1} closing ...
+2024-06-07 20:13:34.547 INFO  com.alibaba.druid.pool.DruidDataSource            :2116 [32m                  [0;39m {dataSource-1} closed
+2024-06-07 20:13:34.709 INFO  com.gec.wiki.WikiApplication                      :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_412 on LAPTOP-GGL9I8HI with PID 14504 (D:\姚智洪\作业\实训作业\wiki\target\classes started by yzh in D:\姚智洪\作业\实训作业\wiki)
+2024-06-07 20:13:34.709 INFO  com.gec.wiki.WikiApplication                      :645  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-06-07 20:13:35.012 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2024-06-07 20:13:35.012 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-07 20:13:35.012 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-07 20:13:35.012 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-06-07 20:13:35.237 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-07 20:13:35.237 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 526 ms
+2024-06-07 20:13:35.547 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-07 20:13:35.557 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-06-07 20:13:35.559 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-07 20:13:35.561 INFO  com.gec.wiki.WikiApplication                      :61   [32m                  [0;39m Started WikiApplication in 0.898 seconds (JVM running for 14019.624)
+2024-06-07 20:13:35.562 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-06-07 20:13:35.562 INFO  com.gec.wiki.WikiApplication                      :21   [32m                  [0;39m 启动成功！！
+2024-06-07 20:13:35.563 INFO  com.gec.wiki.WikiApplication                      :22   [32m                  [0;39m 地址：	http://127.0.0.1:8080
+2024-06-07 20:13:45.098 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:210  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-06-07 20:13:45.185 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8080"]
+2024-06-07 20:13:45.185 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2024-06-07 20:13:45.187 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8080"]
+2024-06-07 20:13:45.189 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8080"]
+2024-06-07 20:13:45.190 INFO  com.alibaba.druid.pool.DruidDataSource            :2043 [32m                  [0;39m {dataSource-0} closing ...
+2024-06-07 20:13:45.289 INFO  com.gec.wiki.WikiApplication                      :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_412 on LAPTOP-GGL9I8HI with PID 14504 (D:\姚智洪\作业\实训作业\wiki\target\classes started by yzh in D:\姚智洪\作业\实训作业\wiki)
+2024-06-07 20:13:45.289 INFO  com.gec.wiki.WikiApplication                      :645  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-06-07 20:13:45.399 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2024-06-07 20:13:45.399 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-07 20:13:45.399 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-07 20:13:45.400 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-06-07 20:13:45.408 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-07 20:13:45.408 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 118 ms
+2024-06-07 20:13:45.625 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-07 20:13:45.633 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-06-07 20:13:45.635 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-07 20:13:45.638 INFO  com.gec.wiki.WikiApplication                      :61   [32m                  [0;39m Started WikiApplication in 0.367 seconds (JVM running for 14029.701)
+2024-06-07 20:13:45.639 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2024-06-07 20:13:45.639 INFO  com.gec.wiki.WikiApplication                      :21   [32m                  [0;39m 启动成功！！
+2024-06-07 20:13:45.639 INFO  com.gec.wiki.WikiApplication                      :22   [32m                  [0;39m 地址：	http://127.0.0.1:8080
+2024-06-07 20:13:58.554 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-07 20:13:58.554 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-07 20:13:58.555 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-07 20:14:49.759 INFO  com.alibaba.druid.pool.DruidDataSource            :990  [32m                  [0;39m {dataSource-2} inited
+2024-06-07 20:16:59.845 WARN  com.alibaba.druid.pool.DruidAbstractDataSource    :1494 [32m                  [0;39m discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, version : 1.2.5, lastPacketReceivedIdleMillis : 101644
+2024-06-07 20:22:56.833 WARN  com.alibaba.druid.pool.DruidAbstractDataSource    :1494 [32m                  [0;39m discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, version : 1.2.5, lastPacketReceivedIdleMillis : 356982
+2024-06-07 20:26:53.056 WARN  com.alibaba.druid.pool.DruidAbstractDataSource    :1494 [32m                  [0;39m discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, version : 1.2.5, lastPacketReceivedIdleMillis : 148114
+2024-06-07 20:29:33.436 WARN  com.alibaba.druid.pool.DruidAbstractDataSource    :1494 [32m                  [0;39m discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, version : 1.2.5, lastPacketReceivedIdleMillis : 148510
+2024-06-07 20:30:37.132 WARN  com.alibaba.druid.pool.DruidAbstractDataSource    :1494 [32m                  [0;39m discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, version : 1.2.5, lastPacketReceivedIdleMillis : 63692
+2024-06-07 22:32:49.126 WARN  com.alibaba.druid.pool.DruidAbstractDataSource    :1494 [32m                  [0;39m discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, version : 1.2.5, lastPacketReceivedIdleMillis : 682438
+2024-06-07 22:40:30.588 WARN  com.alibaba.druid.pool.DruidAbstractDataSource    :1494 [32m                  [0;39m discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, version : 1.2.5, lastPacketReceivedIdleMillis : 461457
+2024-06-07 23:21:25.256 INFO  com.alibaba.druid.pool.DruidDataSource            :2043 [32m                  [0;39m {dataSource-2} closing ...
+2024-06-07 23:21:25.256 INFO  com.alibaba.druid.pool.DruidDataSource            :2116 [32m                  [0;39m {dataSource-2} closed
+2024-06-07 23:21:30.990 INFO  com.gec.wiki.WikiApplication                      :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_412 on LAPTOP-GGL9I8HI with PID 23320 (D:\姚智洪\作业\实训作业\wiki\target\classes started by yzh in D:\姚智洪\作业\实训作业\wiki)
+2024-06-07 23:21:30.992 INFO  com.gec.wiki.WikiApplication                      :645  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-06-07 23:21:31.023 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-07 23:21:31.023 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-07 23:21:31.835 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2024-06-07 23:21:31.841 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-07 23:21:31.841 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-07 23:21:31.841 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-06-07 23:21:31.886 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-07 23:21:31.886 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 863 ms
+2024-06-07 23:21:32.727 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-07 23:21:32.744 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-06-07 23:21:32.754 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-07 23:21:32.760 INFO  com.gec.wiki.WikiApplication                      :61   [32m                  [0;39m Started WikiApplication in 2.007 seconds (JVM running for 2.534)
+2024-06-07 23:21:32.762 INFO  com.gec.wiki.WikiApplication                      :21   [32m                  [0;39m 启动成功！！
+2024-06-07 23:21:32.762 INFO  com.gec.wiki.WikiApplication                      :22   [32m                  [0;39m 地址：	http://127.0.0.1:8080
+2024-06-07 23:22:23.171 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-07 23:22:23.171 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-07 23:22:23.172 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2024-06-07 23:22:23.203 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3549250951644192  [0;39m ------------- 开始 -------------
+2024-06-07 23:22:23.203 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3549250951644192  [0;39m 请求地址: http://localhost:8080/getEbookByEbookReq GET
+2024-06-07 23:22:23.203 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3549250951644192  [0;39m 类名方法: com.gec.wiki.controller.EbookController.getEbookByEbookReq
+2024-06-07 23:22:23.204 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3549250951644192  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-07 23:22:23.234 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3549250951644192  [0;39m 请求参数: [{}]
+2024-06-07 23:22:23.294 INFO  com.alibaba.druid.pool.DruidDataSource            :990  [32m3549250951644192  [0;39m {dataSource-1} inited
+2024-06-07 23:22:23.382 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3549250951644192  [0;39m 返回结果: {"content":[{"category1Id":211,"category2Id":213,"cover":"/image/b5deff812515426293116c48a6226c23.png","description":"虎皮鲨鱼","docCount":3,"id":1,"name":"虎鲸","viewCount":744,"voteCount":484},{"category1Id":100,"category2Id":101,"cover":"/image/106a247d894843248b58e3b5998b4048.jpg","description":"海产藻类（Algae）的统称，通常固着于海底或某种固体结构上，是基础细胞所构成的单株或一长串的简单植物。","docCount":1,"id":2,"name":"海藻","viewCount":13,"voteCount":4},{"category1Id":211,"category2Id":212,"cover":"/image/75a60e7183894aa3ac41c6aa0a7e91e3.jpg","description":"双生水母多营养体期有前、后2个泳钟。前泳钟五角锥状,有5条完整的纵棱,泳囊口有齿,干室较深,口板不分瓣;后泳钟顶部为显著的榫突插进前泳钟干室,泳囊口也有齿。","docCount":1,"id":3,"name":"双生水母","viewCount":6,"voteCount":3},{"category1Id":100,"category2Id":102,"cover":"/image/22e88c9a14344ccd880debb4b23bb6b7.png","description":"多年生海生沉水草本。根茎匍匐，侧扁，棕红色，密被厚层长纤维（叶鞘残迹）。","docCount":1,"id":4,"name":"海神草","viewCount":6,"voteCount":2},{"category1Id":211,"category2Id":213,"cover":"/image/cover1.png","description":"鲸鱼","id":5,"name":"抹香鲸"},{"category1Id":211,"category2Id":213,"cover":"/image/cover2.png","description":"虎虎虎","id":6,"name":"虎鲸"}],"success":true}
+2024-06-07 23:22:23.382 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3549250951644192  [0;39m ------------- 结束 耗时：180 ms -------------
+2024-06-07 23:24:03.840 INFO  com.alibaba.druid.pool.DruidDataSource            :2043 [32m                  [0;39m {dataSource-1} closing ...
+2024-06-07 23:24:03.842 INFO  com.alibaba.druid.pool.DruidDataSource            :2116 [32m                  [0;39m {dataSource-1} closed

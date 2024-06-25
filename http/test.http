@@ -1,0 +1,19 @@
+GET http://localhost:8080/
+Accept: application/json
+
+###
+GET http://localhost:8080/getEbooks
+Accept: application/json
+
+###
+GET http://localhost:8080/getEbookByName?name=虎鲸
+Accept: application/json
+
+###
+GET http://localhost:8080/ebook/getEbookListByPage?page=2&size=10086
+Accept: application/json
+
+###
+
+
+

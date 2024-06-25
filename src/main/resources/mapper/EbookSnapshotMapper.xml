@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gec.wiki.mapper.EbookSnapshotMapper">
+
+    <resultMap id="BaseResultMap" type="com.gec.wiki.pojo.EbookSnapshot">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="ebookId" column="ebook_id" jdbcType="BIGINT"/>
+            <result property="date" column="date" jdbcType="DATE"/>
+            <result property="viewCount" column="view_count" jdbcType="INTEGER"/>
+            <result property="voteCount" column="vote_count" jdbcType="INTEGER"/>
+            <result property="viewIncrease" column="view_increase" jdbcType="INTEGER"/>
+            <result property="voteIncrease" column="vote_increase" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,ebook_id,date,
+        view_count,vote_count,view_increase,
+        vote_increase
+    </sql>
+</mapper>

@@ -1,0 +1,1066 @@
+2024-06-20 14:40:25.785 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.2.5.Final
+2024-06-20 14:40:25.803 INFO  com.gec.wiki.WikiApplication                      :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_412 on LAPTOP-GGL9I8HI with PID 19616 (D:\姚智洪\作业\实训作业\wiki\target\classes started by yzh in D:\姚智洪\作业\实训作业\wiki)
+2024-06-20 14:40:25.804 INFO  com.gec.wiki.WikiApplication                      :645  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-06-20 14:40:25.842 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-20 14:40:25.842 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-20 14:40:27.407 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
+2024-06-20 14:40:27.416 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-20 14:40:27.416 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-06-20 14:40:27.416 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-06-20 14:40:27.482 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-06-20 14:40:27.482 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1639 ms
+2024-06-20 14:40:29.187 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-06-20 14:40:29.202 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
+2024-06-20 14:40:29.214 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-20 14:40:29.221 INFO  com.gec.wiki.WikiApplication                      :61   [32m                  [0;39m Started WikiApplication in 3.709 seconds (JVM running for 6.103)
+2024-06-20 14:40:29.222 INFO  com.gec.wiki.WikiApplication                      :21   [32m                  [0;39m 启动成功！！
+2024-06-20 14:40:29.223 INFO  com.gec.wiki.WikiApplication                      :22   [32m                  [0;39m 地址：	http://127.0.0.1:8080
+2024-06-20 17:02:03.410 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-20 17:02:03.412 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-06-20 17:02:03.420 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 8 ms
+2024-06-20 17:02:03.475 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585308212397088  [0;39m ------------- 开始 -------------
+2024-06-20 17:02:03.476 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585308212397088  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:02:03.476 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585308212397088  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:02:03.476 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585308212397088  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:02:03.527 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585308212397088  [0;39m 请求参数: [{}]
+2024-06-20 17:02:03.619 INFO  com.alibaba.druid.pool.DruidDataSource            :990  [32m3585308212397088  [0;39m {dataSource-1} inited
+2024-06-20 17:02:03.681 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:03.684 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:03.684 INFO  com.alibaba.druid.pool.DruidAbstractDataSource    :1804 [32m                  [0;39m {dataSource-1} failContinuous is true
+2024-06-20 17:02:04.187 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:04.697 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:04.935 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585308260271136  [0;39m ------------- 开始 -------------
+2024-06-20 17:02:04.936 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585308260271136  [0;39m 请求地址: http://localhost:8080/ebook/getEbookListByPage GET
+2024-06-20 17:02:04.936 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585308260271136  [0;39m 类名方法: com.gec.wiki.controller.EbookController.getEbookListByPage
+2024-06-20 17:02:04.936 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585308260271136  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:02:04.938 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585308260271136  [0;39m 请求参数: [{"category2Id":0,"page":1,"size":5}]
+2024-06-20 17:02:05.211 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:05.718 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:06.223 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:06.737 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:07.240 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:07.746 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:08.256 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:08.764 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:09.269 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:09.776 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:10.283 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:10.796 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:11.304 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:11.812 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:12.317 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:12.823 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:13.333 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:13.847 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:14.357 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:14.866 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:15.373 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:15.879 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:16.392 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:16.896 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:17.404 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:17.911 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:18.420 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:18.924 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:19.432 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:19.943 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:20.446 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:20.959 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:21.466 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:21.971 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:22.483 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:22.991 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:23.498 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:24.009 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:24.519 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:24.880 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585308913828896  [0;39m ------------- 开始 -------------
+2024-06-20 17:02:24.881 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585308913828896  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:02:24.881 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585308913828896  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:02:24.881 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585308913828896  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:02:24.881 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585308913828896  [0;39m 请求参数: [{}]
+2024-06-20 17:02:25.032 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:25.538 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:25.808 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585308944237600  [0;39m ------------- 开始 -------------
+2024-06-20 17:02:25.809 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585308944237600  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:02:25.809 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585308944237600  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:02:25.809 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585308944237600  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:02:25.810 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585308944237600  [0;39m 请求参数: [{}]
+2024-06-20 17:02:26.048 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:26.282 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585308959769632  [0;39m ------------- 开始 -------------
+2024-06-20 17:02:26.283 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585308959769632  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:02:26.283 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585308959802400  [0;39m ------------- 开始 -------------
+2024-06-20 17:02:26.283 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585308959769632  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:02:26.283 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585308959802400  [0;39m 请求地址: http://localhost:8080/ebook/getEbookListByPage GET
+2024-06-20 17:02:26.283 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585308959769632  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:02:26.283 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585308959802400  [0;39m 类名方法: com.gec.wiki.controller.EbookController.getEbookListByPage
+2024-06-20 17:02:26.283 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585308959769632  [0;39m 请求参数: [{}]
+2024-06-20 17:02:26.283 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585308959802400  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:02:26.283 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585308959802400  [0;39m 请求参数: [{"category2Id":0,"page":1,"size":5}]
+2024-06-20 17:02:26.560 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:27.062 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:27.574 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:28.083 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:28.589 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:29.095 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:29.604 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:30.114 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:30.619 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:31.129 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:31.634 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:32.139 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:32.647 ERROR com.alibaba.druid.pool.DruidDataSource            :2803 [32m                  [0;39m create connection SQLException, url: jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, errorCode 0, state 08001
+java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1657)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1723)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2801)
+2024-06-20 17:02:33.174 INFO  com.alibaba.druid.pool.DruidAbstractDataSource    :1809 [32m                  [0;39m {dataSource-1} failContinuous is false
+2024-06-20 17:02:33.233 INFO  com.gec.wiki.service.EbookService                 :53   [32m3585308959802400  [0;39m 总行数：6
+2024-06-20 17:02:33.233 INFO  com.gec.wiki.service.EbookService                 :53   [32m3585308260271136  [0;39m 总行数：6
+2024-06-20 17:02:33.233 INFO  com.gec.wiki.service.EbookService                 :54   [32m3585308959802400  [0;39m 总页数：2
+2024-06-20 17:02:33.233 INFO  com.gec.wiki.service.EbookService                 :54   [32m3585308260271136  [0;39m 总页数：2
+2024-06-20 17:02:33.241 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585308212397088  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:02:33.241 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585308944237600  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:02:33.241 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585308913828896  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:02:33.241 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585308212397088  [0;39m ------------- 结束 耗时：29767 ms -------------
+2024-06-20 17:02:33.241 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585308913828896  [0;39m ------------- 结束 耗时：8361 ms -------------
+2024-06-20 17:02:33.241 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585308944237600  [0;39m ------------- 结束 耗时：7433 ms -------------
+2024-06-20 17:02:33.241 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585308959769632  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:02:33.241 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585308260271136  [0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/9fbb2b8e4f7549f8877d1af01c9ffca4.jpg","description":"虎皮鲨鱼","docCount":3,"id":1,"name":"虎鲸","viewCount":744,"voteCount":484},{"category1Id":100,"category2Id":101,"cover":"/image/24085cf8aee746c4a5480f405f5cd84c.jpg","description":"海产藻类（Algae）的统称，通常固着于海底或某种固体结构上，是基础细胞所构成的单株或一长串的简单植物。","docCount":1,"id":2,"name":"海藻","viewCount":13,"voteCount":4},{"category1Id":211,"category2Id":212,"cover":"/image/06492a9c30f34db8a89ec581d99dad5c.jpg","description":"双生水母多营养体期有前、后2个泳钟。前泳钟五角锥状,有5条完整的纵棱,泳囊口有齿,干室较深,口板不分瓣;后泳钟顶部为显著的榫突插进前泳钟干室,泳囊口也有齿。","docCount":1,"id":3,"name":"双生水母","viewCount":6,"voteCount":3},{"category1Id":100,"category2Id":102,"cover":"/image/99878478bddc43fc8f21335bf5bb0545.jpg","description":"多年生海生沉水草本。根茎匍匐，侧扁，棕红色，密被厚层长纤维（叶鞘残迹）。","docCount":1,"id":4,"name":"海神草","viewCount":6,"voteCount":2},{"category1Id":211,"category2Id":213,"cover":"/image/903298259a9848989bf314425ad4b1b7.jpg","description":"鲸鱼","id":5,"name":"抹香鲸"}],"total":6},"success":true}
+2024-06-20 17:02:33.241 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585308260271136  [0;39m ------------- 结束 耗时：28306 ms -------------
+2024-06-20 17:02:33.241 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585308959769632  [0;39m ------------- 结束 耗时：6959 ms -------------
+2024-06-20 17:02:33.242 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585308959802400  [0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/9fbb2b8e4f7549f8877d1af01c9ffca4.jpg","description":"虎皮鲨鱼","docCount":3,"id":1,"name":"虎鲸","viewCount":744,"voteCount":484},{"category1Id":100,"category2Id":101,"cover":"/image/24085cf8aee746c4a5480f405f5cd84c.jpg","description":"海产藻类（Algae）的统称，通常固着于海底或某种固体结构上，是基础细胞所构成的单株或一长串的简单植物。","docCount":1,"id":2,"name":"海藻","viewCount":13,"voteCount":4},{"category1Id":211,"category2Id":212,"cover":"/image/06492a9c30f34db8a89ec581d99dad5c.jpg","description":"双生水母多营养体期有前、后2个泳钟。前泳钟五角锥状,有5条完整的纵棱,泳囊口有齿,干室较深,口板不分瓣;后泳钟顶部为显著的榫突插进前泳钟干室,泳囊口也有齿。","docCount":1,"id":3,"name":"双生水母","viewCount":6,"voteCount":3},{"category1Id":100,"category2Id":102,"cover":"/image/99878478bddc43fc8f21335bf5bb0545.jpg","description":"多年生海生沉水草本。根茎匍匐，侧扁，棕红色，密被厚层长纤维（叶鞘残迹）。","docCount":1,"id":4,"name":"海神草","viewCount":6,"voteCount":2},{"category1Id":211,"category2Id":213,"cover":"/image/903298259a9848989bf314425ad4b1b7.jpg","description":"鲸鱼","id":5,"name":"抹香鲸"}],"total":6},"success":true}
+2024-06-20 17:02:33.242 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585308959802400  [0;39m ------------- 结束 耗时：6959 ms -------------
+2024-06-20 17:02:33.289 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585309189375009  [0;39m ------------- 开始 -------------
+2024-06-20 17:02:33.289 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585309189375008  [0;39m ------------- 开始 -------------
+2024-06-20 17:02:33.290 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585309189375008  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:02:33.290 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585309189375009  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:02:33.290 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585309189375008  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:02:33.290 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585309189375009  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:02:33.290 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585309189375008  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:02:33.290 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585309189375009  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:02:33.290 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585309189375009  [0;39m 请求参数: [{}]
+2024-06-20 17:02:33.290 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585309189375008  [0;39m 请求参数: [{}]
+2024-06-20 17:02:33.294 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585309189375009  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:02:33.294 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585309189375008  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:02:33.295 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585309189375009  [0;39m ------------- 结束 耗时：6 ms -------------
+2024-06-20 17:02:33.295 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585309189375008  [0;39m ------------- 结束 耗时：6 ms -------------
+2024-06-20 17:02:41.080 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585309444670496  [0;39m ------------- 开始 -------------
+2024-06-20 17:02:41.081 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585309444670496  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:02:41.081 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585309444670496  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:02:41.081 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585309444670496  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:02:41.081 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585309444670496  [0;39m 请求参数: [{}]
+2024-06-20 17:02:41.084 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585309444670496  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:02:41.085 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585309444670496  [0;39m ------------- 结束 耗时：5 ms -------------
+2024-06-20 17:02:41.612 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585309462103072  [0;39m ------------- 开始 -------------
+2024-06-20 17:02:41.613 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585309462103072  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:02:41.613 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585309462135840  [0;39m ------------- 开始 -------------
+2024-06-20 17:02:41.613 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585309462103072  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:02:41.613 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585309462135840  [0;39m 请求地址: http://localhost:8080/ebook/getEbookListByPage GET
+2024-06-20 17:02:41.613 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585309462103072  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:02:41.613 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585309462135840  [0;39m 类名方法: com.gec.wiki.controller.EbookController.getEbookListByPage
+2024-06-20 17:02:41.613 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585309462103072  [0;39m 请求参数: [{}]
+2024-06-20 17:02:41.613 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585309462135840  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:02:41.613 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585309462135840  [0;39m 请求参数: [{"category2Id":0,"page":1,"size":5}]
+2024-06-20 17:02:41.616 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585309462103072  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:02:41.617 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585309462103072  [0;39m ------------- 结束 耗时：5 ms -------------
+2024-06-20 17:02:41.618 INFO  com.gec.wiki.service.EbookService                 :53   [32m3585309462135840  [0;39m 总行数：6
+2024-06-20 17:02:41.619 INFO  com.gec.wiki.service.EbookService                 :54   [32m3585309462135840  [0;39m 总页数：2
+2024-06-20 17:02:41.619 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585309462135840  [0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/9fbb2b8e4f7549f8877d1af01c9ffca4.jpg","description":"虎皮鲨鱼","docCount":3,"id":1,"name":"虎鲸","viewCount":744,"voteCount":484},{"category1Id":100,"category2Id":101,"cover":"/image/24085cf8aee746c4a5480f405f5cd84c.jpg","description":"海产藻类（Algae）的统称，通常固着于海底或某种固体结构上，是基础细胞所构成的单株或一长串的简单植物。","docCount":1,"id":2,"name":"海藻","viewCount":13,"voteCount":4},{"category1Id":211,"category2Id":212,"cover":"/image/06492a9c30f34db8a89ec581d99dad5c.jpg","description":"双生水母多营养体期有前、后2个泳钟。前泳钟五角锥状,有5条完整的纵棱,泳囊口有齿,干室较深,口板不分瓣;后泳钟顶部为显著的榫突插进前泳钟干室,泳囊口也有齿。","docCount":1,"id":3,"name":"双生水母","viewCount":6,"voteCount":3},{"category1Id":100,"category2Id":102,"cover":"/image/99878478bddc43fc8f21335bf5bb0545.jpg","description":"多年生海生沉水草本。根茎匍匐，侧扁，棕红色，密被厚层长纤维（叶鞘残迹）。","docCount":1,"id":4,"name":"海神草","viewCount":6,"voteCount":2},{"category1Id":211,"category2Id":213,"cover":"/image/903298259a9848989bf314425ad4b1b7.jpg","description":"鲸鱼","id":5,"name":"抹香鲸"}],"total":6},"success":true}
+2024-06-20 17:02:41.619 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585309462135840  [0;39m ------------- 结束 耗时：6 ms -------------
+2024-06-20 17:02:43.358 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585309519316000  [0;39m ------------- 开始 -------------
+2024-06-20 17:02:43.359 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585309519316000  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:02:43.359 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585309519316000  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:02:43.359 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585309519316000  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:02:43.359 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585309519316000  [0;39m 请求参数: [{}]
+2024-06-20 17:02:43.362 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585309519316000  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:02:43.363 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585309519316000  [0;39m ------------- 结束 耗时：5 ms -------------
+2024-06-20 17:02:43.848 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585309535372320  [0;39m ------------- 开始 -------------
+2024-06-20 17:02:43.848 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585309535372321  [0;39m ------------- 开始 -------------
+2024-06-20 17:02:43.849 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585309535372320  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:02:43.849 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585309535372321  [0;39m 请求地址: http://localhost:8080/ebook/getEbookListByPage GET
+2024-06-20 17:02:43.849 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585309535372320  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:02:43.849 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585309535372321  [0;39m 类名方法: com.gec.wiki.controller.EbookController.getEbookListByPage
+2024-06-20 17:02:43.849 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585309535372320  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:02:43.849 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585309535372321  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:02:43.849 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585309535372320  [0;39m 请求参数: [{}]
+2024-06-20 17:02:43.849 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585309535372321  [0;39m 请求参数: [{"category2Id":0,"page":1,"size":5}]
+2024-06-20 17:02:43.854 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585309535372320  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:02:43.855 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585309535372320  [0;39m ------------- 结束 耗时：7 ms -------------
+2024-06-20 17:02:43.857 INFO  com.gec.wiki.service.EbookService                 :53   [32m3585309535372321  [0;39m 总行数：6
+2024-06-20 17:02:43.858 INFO  com.gec.wiki.service.EbookService                 :54   [32m3585309535372321  [0;39m 总页数：2
+2024-06-20 17:02:43.859 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585309535372321  [0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/9fbb2b8e4f7549f8877d1af01c9ffca4.jpg","description":"虎皮鲨鱼","docCount":3,"id":1,"name":"虎鲸","viewCount":744,"voteCount":484},{"category1Id":100,"category2Id":101,"cover":"/image/24085cf8aee746c4a5480f405f5cd84c.jpg","description":"海产藻类（Algae）的统称，通常固着于海底或某种固体结构上，是基础细胞所构成的单株或一长串的简单植物。","docCount":1,"id":2,"name":"海藻","viewCount":13,"voteCount":4},{"category1Id":211,"category2Id":212,"cover":"/image/06492a9c30f34db8a89ec581d99dad5c.jpg","description":"双生水母多营养体期有前、后2个泳钟。前泳钟五角锥状,有5条完整的纵棱,泳囊口有齿,干室较深,口板不分瓣;后泳钟顶部为显著的榫突插进前泳钟干室,泳囊口也有齿。","docCount":1,"id":3,"name":"双生水母","viewCount":6,"voteCount":3},{"category1Id":100,"category2Id":102,"cover":"/image/99878478bddc43fc8f21335bf5bb0545.jpg","description":"多年生海生沉水草本。根茎匍匐，侧扁，棕红色，密被厚层长纤维（叶鞘残迹）。","docCount":1,"id":4,"name":"海神草","viewCount":6,"voteCount":2},{"category1Id":211,"category2Id":213,"cover":"/image/903298259a9848989bf314425ad4b1b7.jpg","description":"鲸鱼","id":5,"name":"抹香鲸"}],"total":6},"success":true}
+2024-06-20 17:02:43.859 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585309535372321  [0;39m ------------- 结束 耗时：11 ms -------------
+2024-06-20 17:02:45.663 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585309594846240  [0;39m ------------- 开始 -------------
+2024-06-20 17:02:45.663 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585309594846240  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:02:45.663 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585309594846240  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:02:45.663 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585309594846240  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:02:45.663 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585309594846240  [0;39m 请求参数: [{}]
+2024-06-20 17:02:45.667 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585309594846240  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:02:45.667 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585309594846240  [0;39m ------------- 结束 耗时：4 ms -------------
+2024-06-20 17:02:46.249 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585309614048289  [0;39m ------------- 开始 -------------
+2024-06-20 17:02:46.249 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585309614048288  [0;39m ------------- 开始 -------------
+2024-06-20 17:02:46.250 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585309614048289  [0;39m 请求地址: http://localhost:8080/ebook/getEbookListByPage GET
+2024-06-20 17:02:46.250 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585309614048288  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:02:46.250 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585309614048289  [0;39m 类名方法: com.gec.wiki.controller.EbookController.getEbookListByPage
+2024-06-20 17:02:46.250 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585309614048288  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:02:46.250 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585309614048289  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:02:46.250 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585309614048288  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:02:46.250 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585309614048289  [0;39m 请求参数: [{"category2Id":0,"page":1,"size":5}]
+2024-06-20 17:02:46.250 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585309614048288  [0;39m 请求参数: [{}]
+2024-06-20 17:02:46.255 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585309614048288  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:02:46.255 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585309614048288  [0;39m ------------- 结束 耗时：6 ms -------------
+2024-06-20 17:02:46.259 INFO  com.gec.wiki.service.EbookService                 :53   [32m3585309614048289  [0;39m 总行数：6
+2024-06-20 17:02:46.259 INFO  com.gec.wiki.service.EbookService                 :54   [32m3585309614048289  [0;39m 总页数：2
+2024-06-20 17:02:46.259 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585309614048289  [0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/9fbb2b8e4f7549f8877d1af01c9ffca4.jpg","description":"虎皮鲨鱼","docCount":3,"id":1,"name":"虎鲸","viewCount":744,"voteCount":484},{"category1Id":100,"category2Id":101,"cover":"/image/24085cf8aee746c4a5480f405f5cd84c.jpg","description":"海产藻类（Algae）的统称，通常固着于海底或某种固体结构上，是基础细胞所构成的单株或一长串的简单植物。","docCount":1,"id":2,"name":"海藻","viewCount":13,"voteCount":4},{"category1Id":211,"category2Id":212,"cover":"/image/06492a9c30f34db8a89ec581d99dad5c.jpg","description":"双生水母多营养体期有前、后2个泳钟。前泳钟五角锥状,有5条完整的纵棱,泳囊口有齿,干室较深,口板不分瓣;后泳钟顶部为显著的榫突插进前泳钟干室,泳囊口也有齿。","docCount":1,"id":3,"name":"双生水母","viewCount":6,"voteCount":3},{"category1Id":100,"category2Id":102,"cover":"/image/99878478bddc43fc8f21335bf5bb0545.jpg","description":"多年生海生沉水草本。根茎匍匐，侧扁，棕红色，密被厚层长纤维（叶鞘残迹）。","docCount":1,"id":4,"name":"海神草","viewCount":6,"voteCount":2},{"category1Id":211,"category2Id":213,"cover":"/image/903298259a9848989bf314425ad4b1b7.jpg","description":"鲸鱼","id":5,"name":"抹香鲸"}],"total":6},"success":true}
+2024-06-20 17:02:46.260 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585309614048289  [0;39m ------------- 结束 耗时：11 ms -------------
+2024-06-20 17:04:23.340 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585312795526176  [0;39m ------------- 开始 -------------
+2024-06-20 17:04:23.341 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585312795526176  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:04:23.341 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585312795526176  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:04:23.341 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585312795526176  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:04:23.341 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585312795526176  [0;39m 请求参数: [{}]
+2024-06-20 17:04:23.351 WARN  com.alibaba.druid.pool.DruidAbstractDataSource    :1494 [32m3585312795526176  [0;39m discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, version : 1.2.5, lastPacketReceivedIdleMillis : 97087
+2024-06-20 17:04:23.351 WARN  com.alibaba.druid.pool.DruidAbstractDataSource    :1494 [32m3585312795526176  [0;39m discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, version : 1.2.5, lastPacketReceivedIdleMillis : 97099
+2024-06-20 17:04:23.352 WARN  com.alibaba.druid.pool.DruidAbstractDataSource    :1494 [32m3585312795526176  [0;39m discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, version : 1.2.5, lastPacketReceivedIdleMillis : 110133
+2024-06-20 17:04:23.352 WARN  com.alibaba.druid.pool.DruidAbstractDataSource    :1494 [32m3585312795526176  [0;39m discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, version : 1.2.5, lastPacketReceivedIdleMillis : 110133
+2024-06-20 17:04:23.353 WARN  com.alibaba.druid.pool.DruidAbstractDataSource    :1494 [32m3585312795526176  [0;39m discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, version : 1.2.5, lastPacketReceivedIdleMillis : 110134
+2024-06-20 17:04:23.353 WARN  com.alibaba.druid.pool.DruidAbstractDataSource    :1494 [32m3585312795526176  [0;39m discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, version : 1.2.5, lastPacketReceivedIdleMillis : 110134
+2024-06-20 17:04:23.355 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585312795526176  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:04:23.356 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585312795526176  [0;39m ------------- 结束 耗时：16 ms -------------
+2024-06-20 17:04:24.240 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585312825017376  [0;39m ------------- 开始 -------------
+2024-06-20 17:04:24.240 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585312825017376  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:04:24.240 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585312825017376  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:04:24.240 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585312825017376  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:04:24.241 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585312825017376  [0;39m 请求参数: [{}]
+2024-06-20 17:04:24.241 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585312825050144  [0;39m ------------- 开始 -------------
+2024-06-20 17:04:24.241 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585312825050144  [0;39m 请求地址: http://localhost:8080/ebook/getEbookListByPage GET
+2024-06-20 17:04:24.241 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585312825050144  [0;39m 类名方法: com.gec.wiki.controller.EbookController.getEbookListByPage
+2024-06-20 17:04:24.241 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585312825050144  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:04:24.241 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585312825050144  [0;39m 请求参数: [{"category2Id":0,"page":1,"size":5}]
+2024-06-20 17:04:24.243 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585312825017376  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:04:24.244 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585312825017376  [0;39m ------------- 结束 耗时：4 ms -------------
+2024-06-20 17:04:24.247 INFO  com.gec.wiki.service.EbookService                 :53   [32m3585312825050144  [0;39m 总行数：6
+2024-06-20 17:04:24.248 INFO  com.gec.wiki.service.EbookService                 :54   [32m3585312825050144  [0;39m 总页数：2
+2024-06-20 17:04:24.248 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585312825050144  [0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/9fbb2b8e4f7549f8877d1af01c9ffca4.jpg","description":"虎皮鲨鱼","docCount":3,"id":1,"name":"虎鲸","viewCount":744,"voteCount":484},{"category1Id":100,"category2Id":101,"cover":"/image/24085cf8aee746c4a5480f405f5cd84c.jpg","description":"海产藻类（Algae）的统称，通常固着于海底或某种固体结构上，是基础细胞所构成的单株或一长串的简单植物。","docCount":1,"id":2,"name":"海藻","viewCount":13,"voteCount":4},{"category1Id":211,"category2Id":212,"cover":"/image/06492a9c30f34db8a89ec581d99dad5c.jpg","description":"双生水母多营养体期有前、后2个泳钟。前泳钟五角锥状,有5条完整的纵棱,泳囊口有齿,干室较深,口板不分瓣;后泳钟顶部为显著的榫突插进前泳钟干室,泳囊口也有齿。","docCount":1,"id":3,"name":"双生水母","viewCount":6,"voteCount":3},{"category1Id":100,"category2Id":102,"cover":"/image/99878478bddc43fc8f21335bf5bb0545.jpg","description":"多年生海生沉水草本。根茎匍匐，侧扁，棕红色，密被厚层长纤维（叶鞘残迹）。","docCount":1,"id":4,"name":"海神草","viewCount":6,"voteCount":2},{"category1Id":211,"category2Id":213,"cover":"/image/903298259a9848989bf314425ad4b1b7.jpg","description":"鲸鱼","id":5,"name":"抹香鲸"}],"total":6},"success":true}
+2024-06-20 17:04:24.248 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585312825050144  [0;39m ------------- 结束 耗时：7 ms -------------
+2024-06-20 17:04:24.768 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585312842318880  [0;39m ------------- 开始 -------------
+2024-06-20 17:04:24.768 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585312842318880  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:04:24.768 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585312842318880  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:04:24.768 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585312842318880  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:04:24.768 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585312842318880  [0;39m 请求参数: [{}]
+2024-06-20 17:04:24.771 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585312842318880  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:04:24.771 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585312842318880  [0;39m ------------- 结束 耗时：3 ms -------------
+2024-06-20 17:04:25.708 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585312873120800  [0;39m ------------- 开始 -------------
+2024-06-20 17:04:25.709 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585312873120800  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:04:25.709 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585312873120800  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:04:25.709 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585312873120800  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:04:25.709 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585312873120800  [0;39m 请求参数: [{}]
+2024-06-20 17:04:25.712 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585312873120800  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:04:25.712 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585312873120800  [0;39m ------------- 结束 耗时：4 ms -------------
+2024-06-20 17:04:27.336 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585312926467104  [0;39m ------------- 开始 -------------
+2024-06-20 17:04:27.336 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585312926467105  [0;39m ------------- 开始 -------------
+2024-06-20 17:04:27.336 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585312926467104  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:04:27.336 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585312926467105  [0;39m 请求地址: http://localhost:8080/ebook/getEbookListByPage GET
+2024-06-20 17:04:27.337 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585312926467104  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:04:27.337 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585312926467105  [0;39m 类名方法: com.gec.wiki.controller.EbookController.getEbookListByPage
+2024-06-20 17:04:27.337 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585312926467104  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:04:27.337 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585312926467105  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:04:27.337 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585312926467104  [0;39m 请求参数: [{}]
+2024-06-20 17:04:27.337 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585312926467105  [0;39m 请求参数: [{"category2Id":0,"page":1,"size":5}]
+2024-06-20 17:04:27.341 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585312926467104  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:04:27.341 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585312926467104  [0;39m ------------- 结束 耗时：5 ms -------------
+2024-06-20 17:04:27.342 INFO  com.gec.wiki.service.EbookService                 :53   [32m3585312926467105  [0;39m 总行数：6
+2024-06-20 17:04:27.342 INFO  com.gec.wiki.service.EbookService                 :54   [32m3585312926467105  [0;39m 总页数：2
+2024-06-20 17:04:27.342 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585312926467105  [0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/9fbb2b8e4f7549f8877d1af01c9ffca4.jpg","description":"虎皮鲨鱼","docCount":3,"id":1,"name":"虎鲸","viewCount":744,"voteCount":484},{"category1Id":100,"category2Id":101,"cover":"/image/24085cf8aee746c4a5480f405f5cd84c.jpg","description":"海产藻类（Algae）的统称，通常固着于海底或某种固体结构上，是基础细胞所构成的单株或一长串的简单植物。","docCount":1,"id":2,"name":"海藻","viewCount":13,"voteCount":4},{"category1Id":211,"category2Id":212,"cover":"/image/06492a9c30f34db8a89ec581d99dad5c.jpg","description":"双生水母多营养体期有前、后2个泳钟。前泳钟五角锥状,有5条完整的纵棱,泳囊口有齿,干室较深,口板不分瓣;后泳钟顶部为显著的榫突插进前泳钟干室,泳囊口也有齿。","docCount":1,"id":3,"name":"双生水母","viewCount":6,"voteCount":3},{"category1Id":100,"category2Id":102,"cover":"/image/99878478bddc43fc8f21335bf5bb0545.jpg","description":"多年生海生沉水草本。根茎匍匐，侧扁，棕红色，密被厚层长纤维（叶鞘残迹）。","docCount":1,"id":4,"name":"海神草","viewCount":6,"voteCount":2},{"category1Id":211,"category2Id":213,"cover":"/image/903298259a9848989bf314425ad4b1b7.jpg","description":"鲸鱼","id":5,"name":"抹香鲸"}],"total":6},"success":true}
+2024-06-20 17:04:27.342 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585312926467105  [0;39m ------------- 结束 耗时：6 ms -------------
+2024-06-20 17:04:28.081 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585312950879264  [0;39m ------------- 开始 -------------
+2024-06-20 17:04:28.082 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585312950879264  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:04:28.082 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585312950879264  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:04:28.082 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585312950879264  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:04:28.082 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585312950879264  [0;39m 请求参数: [{}]
+2024-06-20 17:04:28.085 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585312950879264  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:04:28.086 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585312950879264  [0;39m ------------- 结束 耗时：5 ms -------------
+2024-06-20 17:04:32.120 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585313083229216  [0;39m ------------- 开始 -------------
+2024-06-20 17:04:32.121 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585313083229216  [0;39m 请求地址: http://localhost:8080/ebook/getEbookListByPage GET
+2024-06-20 17:04:32.121 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585313083229216  [0;39m 类名方法: com.gec.wiki.controller.EbookController.getEbookListByPage
+2024-06-20 17:04:32.121 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585313083229216  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:04:32.121 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585313083229216  [0;39m 请求参数: [{"category2Id":213,"page":1,"size":1000}]
+2024-06-20 17:04:32.132 INFO  com.gec.wiki.service.EbookService                 :53   [32m3585313083229216  [0;39m 总行数：2
+2024-06-20 17:04:32.132 INFO  com.gec.wiki.service.EbookService                 :54   [32m3585313083229216  [0;39m 总页数：1
+2024-06-20 17:04:32.133 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585313083229216  [0;39m 返回结果: {"content":{"list":[{"category1Id":211,"category2Id":213,"cover":"/image/903298259a9848989bf314425ad4b1b7.jpg","description":"鲸鱼","id":5,"name":"抹香鲸"},{"category1Id":211,"category2Id":213,"cover":"/image/cover2.png","description":"虎虎虎","id":6,"name":"虎鲸"}],"total":2},"success":true}
+2024-06-20 17:04:32.133 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585313083229216  [0;39m ------------- 结束 耗时：13 ms -------------
+2024-06-20 17:04:34.747 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585313169310752  [0;39m ------------- 开始 -------------
+2024-06-20 17:04:34.747 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585313169310753  [0;39m ------------- 开始 -------------
+2024-06-20 17:04:34.747 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585313169310753  [0;39m 请求地址: http://localhost:8080/ebook/getEbookListByPage GET
+2024-06-20 17:04:34.747 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585313169310752  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:04:34.747 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585313169310753  [0;39m 类名方法: com.gec.wiki.controller.EbookController.getEbookListByPage
+2024-06-20 17:04:34.747 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585313169310752  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:04:34.747 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585313169310752  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:04:34.747 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585313169310753  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:04:34.748 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585313169310753  [0;39m 请求参数: [{"category2Id":0,"page":1,"size":5}]
+2024-06-20 17:04:34.748 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585313169310752  [0;39m 请求参数: [{}]
+2024-06-20 17:04:34.751 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585313169310752  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:04:34.752 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585313169310752  [0;39m ------------- 结束 耗时：5 ms -------------
+2024-06-20 17:04:34.752 INFO  com.gec.wiki.service.EbookService                 :53   [32m3585313169310753  [0;39m 总行数：6
+2024-06-20 17:04:34.752 INFO  com.gec.wiki.service.EbookService                 :54   [32m3585313169310753  [0;39m 总页数：2
+2024-06-20 17:04:34.752 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585313169310753  [0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/9fbb2b8e4f7549f8877d1af01c9ffca4.jpg","description":"虎皮鲨鱼","docCount":3,"id":1,"name":"虎鲸","viewCount":744,"voteCount":484},{"category1Id":100,"category2Id":101,"cover":"/image/24085cf8aee746c4a5480f405f5cd84c.jpg","description":"海产藻类（Algae）的统称，通常固着于海底或某种固体结构上，是基础细胞所构成的单株或一长串的简单植物。","docCount":1,"id":2,"name":"海藻","viewCount":13,"voteCount":4},{"category1Id":211,"category2Id":212,"cover":"/image/06492a9c30f34db8a89ec581d99dad5c.jpg","description":"双生水母多营养体期有前、后2个泳钟。前泳钟五角锥状,有5条完整的纵棱,泳囊口有齿,干室较深,口板不分瓣;后泳钟顶部为显著的榫突插进前泳钟干室,泳囊口也有齿。","docCount":1,"id":3,"name":"双生水母","viewCount":6,"voteCount":3},{"category1Id":100,"category2Id":102,"cover":"/image/99878478bddc43fc8f21335bf5bb0545.jpg","description":"多年生海生沉水草本。根茎匍匐，侧扁，棕红色，密被厚层长纤维（叶鞘残迹）。","docCount":1,"id":4,"name":"海神草","viewCount":6,"voteCount":2},{"category1Id":211,"category2Id":213,"cover":"/image/903298259a9848989bf314425ad4b1b7.jpg","description":"鲸鱼","id":5,"name":"抹香鲸"}],"total":6},"success":true}
+2024-06-20 17:04:34.752 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585313169310753  [0;39m ------------- 结束 耗时：5 ms -------------
+2024-06-20 17:04:35.437 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585313191920672  [0;39m ------------- 开始 -------------
+2024-06-20 17:04:35.437 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585313191920672  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:04:35.437 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585313191920672  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:04:35.438 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585313191920672  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:04:35.438 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585313191920672  [0;39m 请求参数: [{}]
+2024-06-20 17:04:35.440 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585313191920672  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:04:35.440 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585313191920672  [0;39m ------------- 结束 耗时：3 ms -------------
+2024-06-20 17:04:43.697 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585313462584352  [0;39m ------------- 开始 -------------
+2024-06-20 17:04:43.698 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585313462584352  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:04:43.698 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585313462584352  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:04:43.698 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585313462584352  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:04:43.698 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585313462584352  [0;39m 请求参数: [{}]
+2024-06-20 17:04:43.700 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585313462584352  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:04:43.701 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585313462584352  [0;39m ------------- 结束 耗时：4 ms -------------
+2024-06-20 17:14:43.902 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585333130101792  [0;39m ------------- 开始 -------------
+2024-06-20 17:14:43.902 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585333130101793  [0;39m ------------- 开始 -------------
+2024-06-20 17:14:43.902 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585333130101792  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:14:43.902 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585333130101793  [0;39m 请求地址: http://localhost:8080/ebook/getEbookListByPage GET
+2024-06-20 17:14:43.902 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585333130101792  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:14:43.902 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585333130101793  [0;39m 类名方法: com.gec.wiki.controller.EbookController.getEbookListByPage
+2024-06-20 17:14:43.902 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585333130101792  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:14:43.902 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585333130101793  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:14:43.902 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585333130101792  [0;39m 请求参数: [{}]
+2024-06-20 17:14:43.902 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585333130101793  [0;39m 请求参数: [{"category2Id":0,"page":1,"size":5}]
+2024-06-20 17:14:43.904 WARN  com.alibaba.druid.pool.DruidAbstractDataSource    :1494 [32m3585333130101792  [0;39m discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, version : 1.2.5, lastPacketReceivedIdleMillis : 600204
+2024-06-20 17:14:43.905 WARN  com.alibaba.druid.pool.DruidAbstractDataSource    :1494 [32m3585333130101793  [0;39m discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3366/wiki?characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false, version : 1.2.5, lastPacketReceivedIdleMillis : 609155
+2024-06-20 17:14:43.912 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585333130101792  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:14:43.913 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585333130101792  [0;39m ------------- 结束 耗时：11 ms -------------
+2024-06-20 17:14:43.915 INFO  com.gec.wiki.service.EbookService                 :53   [32m3585333130101793  [0;39m 总行数：6
+2024-06-20 17:14:43.915 INFO  com.gec.wiki.service.EbookService                 :54   [32m3585333130101793  [0;39m 总页数：2
+2024-06-20 17:14:43.916 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585333130101793  [0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/9fbb2b8e4f7549f8877d1af01c9ffca4.jpg","description":"虎皮鲨鱼","docCount":3,"id":1,"name":"虎鲸","viewCount":744,"voteCount":484},{"category1Id":100,"category2Id":101,"cover":"/image/24085cf8aee746c4a5480f405f5cd84c.jpg","description":"海产藻类（Algae）的统称，通常固着于海底或某种固体结构上，是基础细胞所构成的单株或一长串的简单植物。","docCount":1,"id":2,"name":"海藻","viewCount":13,"voteCount":4},{"category1Id":211,"category2Id":212,"cover":"/image/06492a9c30f34db8a89ec581d99dad5c.jpg","description":"双生水母多营养体期有前、后2个泳钟。前泳钟五角锥状,有5条完整的纵棱,泳囊口有齿,干室较深,口板不分瓣;后泳钟顶部为显著的榫突插进前泳钟干室,泳囊口也有齿。","docCount":1,"id":3,"name":"双生水母","viewCount":6,"voteCount":3},{"category1Id":100,"category2Id":102,"cover":"/image/99878478bddc43fc8f21335bf5bb0545.jpg","description":"多年生海生沉水草本。根茎匍匐，侧扁，棕红色，密被厚层长纤维（叶鞘残迹）。","docCount":1,"id":4,"name":"海神草","viewCount":6,"voteCount":2},{"category1Id":211,"category2Id":213,"cover":"/image/903298259a9848989bf314425ad4b1b7.jpg","description":"鲸鱼","id":5,"name":"抹香鲸"}],"total":6},"success":true}
+2024-06-20 17:14:43.916 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585333130101793  [0;39m ------------- 结束 耗时：14 ms -------------
+2024-06-20 17:14:44.975 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585333165261856  [0;39m ------------- 开始 -------------
+2024-06-20 17:14:44.975 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585333165261856  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:14:44.975 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585333165261856  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:14:44.975 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585333165261856  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:14:44.975 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585333165261856  [0;39m 请求参数: [{}]
+2024-06-20 17:14:44.978 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585333165261856  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:14:44.978 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585333165261856  [0;39m ------------- 结束 耗时：3 ms -------------
+2024-06-20 17:14:46.334 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585333209793568  [0;39m ------------- 开始 -------------
+2024-06-20 17:14:46.334 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585333209793568  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:14:46.334 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585333209793568  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:14:46.334 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585333209793568  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:14:46.334 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585333209793568  [0;39m 请求参数: [{}]
+2024-06-20 17:14:46.338 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585333209793568  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:14:46.338 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585333209793568  [0;39m ------------- 结束 耗时：4 ms -------------
+2024-06-20 17:14:46.848 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585333226636320  [0;39m ------------- 开始 -------------
+2024-06-20 17:14:46.848 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585333226636321  [0;39m ------------- 开始 -------------
+2024-06-20 17:14:46.848 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585333226636320  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:14:46.848 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585333226636321  [0;39m 请求地址: http://localhost:8080/ebook/getEbookListByPage GET
+2024-06-20 17:14:46.848 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585333226636321  [0;39m 类名方法: com.gec.wiki.controller.EbookController.getEbookListByPage
+2024-06-20 17:14:46.848 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585333226636320  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:14:46.848 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585333226636321  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:14:46.848 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585333226636320  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:14:46.848 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585333226636321  [0;39m 请求参数: [{"category2Id":0,"page":1,"size":5}]
+2024-06-20 17:14:46.848 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585333226636320  [0;39m 请求参数: [{}]
+2024-06-20 17:14:46.851 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585333226636320  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:14:46.852 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585333226636320  [0;39m ------------- 结束 耗时：4 ms -------------
+2024-06-20 17:14:46.855 INFO  com.gec.wiki.service.EbookService                 :53   [32m3585333226636321  [0;39m 总行数：6
+2024-06-20 17:14:46.855 INFO  com.gec.wiki.service.EbookService                 :54   [32m3585333226636321  [0;39m 总页数：2
+2024-06-20 17:14:46.856 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585333226636321  [0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/9fbb2b8e4f7549f8877d1af01c9ffca4.jpg","description":"虎皮鲨鱼","docCount":3,"id":1,"name":"虎鲸","viewCount":744,"voteCount":484},{"category1Id":100,"category2Id":101,"cover":"/image/24085cf8aee746c4a5480f405f5cd84c.jpg","description":"海产藻类（Algae）的统称，通常固着于海底或某种固体结构上，是基础细胞所构成的单株或一长串的简单植物。","docCount":1,"id":2,"name":"海藻","viewCount":13,"voteCount":4},{"category1Id":211,"category2Id":212,"cover":"/image/06492a9c30f34db8a89ec581d99dad5c.jpg","description":"双生水母多营养体期有前、后2个泳钟。前泳钟五角锥状,有5条完整的纵棱,泳囊口有齿,干室较深,口板不分瓣;后泳钟顶部为显著的榫突插进前泳钟干室,泳囊口也有齿。","docCount":1,"id":3,"name":"双生水母","viewCount":6,"voteCount":3},{"category1Id":100,"category2Id":102,"cover":"/image/99878478bddc43fc8f21335bf5bb0545.jpg","description":"多年生海生沉水草本。根茎匍匐，侧扁，棕红色，密被厚层长纤维（叶鞘残迹）。","docCount":1,"id":4,"name":"海神草","viewCount":6,"voteCount":2},{"category1Id":211,"category2Id":213,"cover":"/image/903298259a9848989bf314425ad4b1b7.jpg","description":"鲸鱼","id":5,"name":"抹香鲸"}],"total":6},"success":true}
+2024-06-20 17:14:46.856 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585333226636321  [0;39m ------------- 结束 耗时：8 ms -------------
+2024-06-20 17:14:47.365 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585333243577376  [0;39m ------------- 开始 -------------
+2024-06-20 17:14:47.365 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585333243577376  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:14:47.365 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585333243577376  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:14:47.365 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585333243577376  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:14:47.365 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585333243577376  [0;39m 请求参数: [{}]
+2024-06-20 17:14:47.368 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585333243577376  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:14:47.368 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585333243577376  [0;39m ------------- 结束 耗时：3 ms -------------
+2024-06-20 17:14:47.869 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585333260092448  [0;39m ------------- 开始 -------------
+2024-06-20 17:14:47.869 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585333260092448  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:14:47.869 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585333260092448  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:14:47.869 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585333260092448  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:14:47.869 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585333260092448  [0;39m 请求参数: [{}]
+2024-06-20 17:14:47.873 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585333260092448  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:14:47.873 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585333260092448  [0;39m ------------- 结束 耗时：4 ms -------------
+2024-06-20 17:14:49.765 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585333322220576  [0;39m ------------- 开始 -------------
+2024-06-20 17:14:49.765 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585333322220576  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:14:49.765 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585333322220576  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:14:49.765 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585333322220576  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:14:49.765 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585333322220576  [0;39m 请求参数: [{}]
+2024-06-20 17:14:49.767 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585333322220576  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:14:49.768 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585333322220576  [0;39m ------------- 结束 耗时：3 ms -------------
+2024-06-20 17:14:51.056 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585333364524064  [0;39m ------------- 开始 -------------
+2024-06-20 17:14:51.056 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585333364524065  [0;39m ------------- 开始 -------------
+2024-06-20 17:14:51.056 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585333364524064  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:14:51.056 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585333364524065  [0;39m 请求地址: http://localhost:8080/ebook/getEbookListByPage GET
+2024-06-20 17:14:51.056 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585333364524064  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:14:51.056 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585333364524065  [0;39m 类名方法: com.gec.wiki.controller.EbookController.getEbookListByPage
+2024-06-20 17:14:51.056 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585333364524064  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:14:51.056 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585333364524065  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:14:51.056 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585333364524065  [0;39m 请求参数: [{"category2Id":0,"page":1,"size":5}]
+2024-06-20 17:14:51.056 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585333364524064  [0;39m 请求参数: [{}]
+2024-06-20 17:14:51.060 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585333364524064  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:14:51.060 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585333364524064  [0;39m ------------- 结束 耗时：4 ms -------------
+2024-06-20 17:14:51.061 INFO  com.gec.wiki.service.EbookService                 :53   [32m3585333364524065  [0;39m 总行数：6
+2024-06-20 17:14:51.062 INFO  com.gec.wiki.service.EbookService                 :54   [32m3585333364524065  [0;39m 总页数：2
+2024-06-20 17:14:51.062 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585333364524065  [0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/9fbb2b8e4f7549f8877d1af01c9ffca4.jpg","description":"虎皮鲨鱼","docCount":3,"id":1,"name":"虎鲸","viewCount":744,"voteCount":484},{"category1Id":100,"category2Id":101,"cover":"/image/24085cf8aee746c4a5480f405f5cd84c.jpg","description":"海产藻类（Algae）的统称，通常固着于海底或某种固体结构上，是基础细胞所构成的单株或一长串的简单植物。","docCount":1,"id":2,"name":"海藻","viewCount":13,"voteCount":4},{"category1Id":211,"category2Id":212,"cover":"/image/06492a9c30f34db8a89ec581d99dad5c.jpg","description":"双生水母多营养体期有前、后2个泳钟。前泳钟五角锥状,有5条完整的纵棱,泳囊口有齿,干室较深,口板不分瓣;后泳钟顶部为显著的榫突插进前泳钟干室,泳囊口也有齿。","docCount":1,"id":3,"name":"双生水母","viewCount":6,"voteCount":3},{"category1Id":100,"category2Id":102,"cover":"/image/99878478bddc43fc8f21335bf5bb0545.jpg","description":"多年生海生沉水草本。根茎匍匐，侧扁，棕红色，密被厚层长纤维（叶鞘残迹）。","docCount":1,"id":4,"name":"海神草","viewCount":6,"voteCount":2},{"category1Id":211,"category2Id":213,"cover":"/image/903298259a9848989bf314425ad4b1b7.jpg","description":"鲸鱼","id":5,"name":"抹香鲸"}],"total":6},"success":true}
+2024-06-20 17:14:51.062 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585333364524065  [0;39m ------------- 结束 耗时：6 ms -------------
+2024-06-20 17:14:52.302 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585333405352992  [0;39m ------------- 开始 -------------
+2024-06-20 17:14:52.302 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585333405352992  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:14:52.303 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585333405352992  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:14:52.303 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585333405352992  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:14:52.303 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585333405352992  [0;39m 请求参数: [{}]
+2024-06-20 17:14:52.305 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585333405352992  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:14:52.305 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585333405352992  [0;39m ------------- 结束 耗时：3 ms -------------
+2024-06-20 17:15:31.897 INFO  com.gec.wiki.aspect.LogAspect                     :54   [32m3585334702801952  [0;39m ------------- 开始 -------------
+2024-06-20 17:15:31.898 INFO  com.gec.wiki.aspect.LogAspect                     :55   [32m3585334702801952  [0;39m 请求地址: http://localhost:8080/category/allList GET
+2024-06-20 17:15:31.898 INFO  com.gec.wiki.aspect.LogAspect                     :56   [32m3585334702801952  [0;39m 类名方法: com.gec.wiki.controller.CategoryController.allList
+2024-06-20 17:15:31.898 INFO  com.gec.wiki.aspect.LogAspect                     :57   [32m3585334702801952  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2024-06-20 17:15:31.898 INFO  com.gec.wiki.aspect.LogAspect                     :79   [32m3585334702801952  [0;39m 请求参数: [{}]
+2024-06-20 17:15:31.901 INFO  com.gec.wiki.aspect.LogAspect                     :91   [32m3585334702801952  [0;39m 返回结果: {"content":[{"id":211,"name":"海洋动物","parent":0,"sort":1},{"id":213,"name":"海洋游泳动物","parent":211,"sort":1},{"id":100,"name":"海洋植物","parent":0,"sort":2},{"id":208,"name":"test2","parent":207,"sort":2},{"id":212,"name":"海洋浮游动物","parent":211,"sort":2},{"id":200,"name":"微生物","parent":0,"sort":3},{"id":214,"name":"海洋底栖动物","parent":211,"sort":3},{"id":3568229154456608,"name":"鸡哥哥","parent":11,"sort":22},{"id":101,"name":"藻类植物","parent":100,"sort":101},{"id":102,"name":"红树林","parent":100,"sort":102},{"id":201,"name":"地下微生物","parent":200,"sort":201},{"id":202,"name":"海洋微生物","parent":200,"sort":202}],"success":true}
+2024-06-20 17:15:31.901 INFO  com.gec.wiki.aspect.LogAspect                     :92   [32m3585334702801952  [0;39m ------------- 结束 耗时：4 ms -------------
+2024-06-20 19:55:32.735 INFO  com.alibaba.druid.pool.DruidDataSource            :2043 [32m                  [0;39m {dataSource-1} closing ...
+2024-06-20 19:55:32.736 INFO  com.alibaba.druid.pool.DruidDataSource            :2116 [32m                  [0;39m {dataSource-1} closed
